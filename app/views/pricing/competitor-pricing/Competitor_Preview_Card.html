@@ -1,0 +1,143 @@
+<div id="secondCardDiv" data-ng-show="secondCardFlag">
+	<section class="panel panel-default">
+			<div class="page page-table wizard clearfix" role="application"
+				id="steps-uid-1">
+				<div class="steps clearfix">
+					<ul role="tablist">
+						<li role="tab" class="first done hide_title_block" aria-disabled="false"
+							aria-selected="false"><a id="steps-uid-0-t-0" href=""
+							aria-controls="steps-uid-0-p-0"><span class="number">1.</span>
+								Enter Prices</a></li>
+						<li role="tab" class="current" aria-disabled="false"
+							aria-selected="true"><a id="steps-uid-0-t-1" href=""
+							aria-controls="steps-uid-0-p-1"><span
+								class="current-info audible">current step: </span><span
+								class="number">2.</span> Preview</a></li>
+						<li role="tab" class="disabled last hide_title_block" aria-disabled="true"><a
+							id="steps-uid-0-t-2" href="" aria-controls="steps-uid-0-p-2"><span
+								class="number">3.</span> Confirmation</a></li>
+					</ul>
+				</div>
+				<div class="content clearfix"> 
+					<h1 id="steps-uid-1-h-0" tabindex="-1" class="title current">First
+						Step</h1>
+					<div id="steps-uid-1-p-0" role="tabpanel"> 
+						<!-- <div class="table-filters" style="margin-top: 20px;">
+							<div class="row">
+								<div class="col-sm-6 col-xs-6">
+									<form>
+										<div class="form-group col-sm-4">
+											<label for="exampleInputEmail1">SHIP-TO</label> <span
+												class="ui-select"> <select>
+													<option value="Mustard">ALL</option>
+													<option data-ng-repeat="store in currentPageStores"
+														value="{{store.shipTo}}">{{store.shipTo}}</option>
+											</select>
+											</span>
+										</div>
+										<div class="col-sm-1">OR</div>
+										<div class="form-group col-sm-4">
+											<label for="exampleInputEmail1">SITE-#</label> <span
+												class="ui-select"> <select>
+												<option value="Mustard">ALL</option>
+												<option ng-repeat="store in currentPageStores"
+													value="{{store.site}}">{{store.site}}</option>
+											</select> </span>
+										</div>
+										<div class="col-sm-1">
+											<label for="exampleInputEmail1"></label> <a
+												href="#/retail-pricing#dataTableStart"
+												class="btn btn-default "> Search </a>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div> -->
+						<section class="table-flip-scroll">
+							<table class="table table-bordered table-striped cf ">
+								<thead>
+											<tr>
+												<th><div class="th"> SHIP-TO <span class="fa fa-angle-up hide_sortable_icons"
+														data-ng-click=" order('shipTo') "
+														data-ng-class="{active: row == 'shipTo'}"></span> <span
+														class="fa fa-angle-down hide_sortable_icons"
+														data-ng-click=" order('-shipTo') "
+														data-ng-class="{active: row == '-shipTo'}"></span></div></th>
+												<th><div class="th"> SITE #  <span class="fa fa-angle-up hide_sortable_icons"
+														data-ng-click=" order('site') "
+														data-ng-class="{active: row == 'site'}"></span> <span
+														class="fa fa-angle-down hide_sortable_icons"
+														data-ng-click=" order('-site') "
+														data-ng-class="{active: row == 'site'}"></span></div></th>
+												<th><div class="th"> Brand  <span class="fa fa-angle-up hide_sortable_icons"
+														data-ng-click=" order('brand') "
+														data-ng-class="{active: row == 'brand'}"></span> <span
+														class="fa fa-angle-down hide_sortable_icons"
+														data-ng-click=" order('-brand') "
+														data-ng-class="{active: row == 'brand'}"></span></div></th>
+												<th><div class="th"> Address  <span class="fa fa-angle-up hide_sortable_icons"
+														data-ng-click=" order('address') "
+														data-ng-class="{active: row == 'address'}"></span> <span
+														class="fa fa-angle-down hide_sortable_icons"
+														data-ng-click=" order('-address') "
+														data-ng-class="{active: row == 'address'}"></span></div></th>
+												<th><div class="th"> City  <span class="fa fa-angle-up hide_sortable_icons"
+														data-ng-click=" order('city') "
+														data-ng-class="{active: row == 'city'}"></span> <span
+														class="fa fa-angle-down hide_sortable_icons"
+														data-ng-click=" order('city') "
+														data-ng-class="{active: row == 'city'}"></span></div></th>
+												<th><div class="th"> Unleaded <span class="fa fa-angle-up hide_sortable_icons"></span> 
+													<span class="fa fa-angle-down hide_sortable_icons"></span></div></th>
+												<th><div class="th"> Midgrade <span class="fa fa-angle-up hide_sortable_icons"></span> 
+													<span class="fa fa-angle-down hide_sortable_icons"></span></div></th>
+												<th><div class="th"> Premium <span class="fa fa-angle-up hide_sortable_icons"></span> 
+													<span class="fa fa-angle-down hide_sortable_icons"></span></div></th>
+												<th><div class="th"> Deasel <span class="fa fa-angle-up hide_sortable_icons"></span> 
+													<span class="fa fa-angle-down hide_sortable_icons"></span></div></th>
+											</tr>
+										</thead>
+								<tbody>
+									<tr data-ng-repeat="store in currentPageStores">
+										<td>{{store.shipTo}}</td>
+										<td>{{store.site}}</td>
+										<td>{{store.brand}}</td>
+										<td>{{store.address}}</td>
+										<td>{{store.city}}</td>
+										<td class="noData_Min_Height"><label id="{{store.shipTo}}_Unleaded_preview" ></label></td>
+										<td class="noData_Min_Height"><label id="{{store.shipTo}}_Midgrade_preview"  ></label></td>
+										<td class="noData_Min_Height"><label id="{{store.shipTo}}_Premium_preview"  ></label></td>
+										<td class="noData_Min_Height"><label id="{{store.shipTo}}_Deasel_preview"  ></label></td>
+
+									</tr>
+								</tbody>
+							</table>
+						</section>
+					</div>
+					<div id="steps-uid-0-p-0" role="tabpanel"
+						aria-labelledby="steps-uid-0-h-0" class="body current"
+						aria-hidden="false"></div>
+					<h1 id="steps-uid-0-h-1" tabindex="-1" class="title">Second
+						Step</h1>
+					<div id="steps-uid-0-p-1" role="tabpanel"
+						aria-labelledby="steps-uid-0-h-1" class="body"
+						style="display: none;" aria-hidden="true"></div>
+					<h1 id="steps-uid-0-h-2" tabindex="-1" class="title">Third
+						Step</h1>
+					<div id="steps-uid-0-p-2" role="tabpanel"
+						aria-labelledby="steps-uid-0-h-2" class="body"
+						style="display: none;" aria-hidden="true"></div>
+				</div>
+				<div class="actions clearfix">
+					<ul role="menu" aria-label="Pagination">
+						<li class="" aria-disabled="false"><a href="" role="menuitem"
+							data-ng-click="ChangeCard(1)">Previous</a></li>
+						<li aria-hidden="false" aria-disabled="false"><a href=""
+							role="menuitem" data-ng-click="ChangeCard(3)">Finish</a></li>
+						<li aria-hidden="true" style="display: none;"><a href=""
+							role="menuitem">Finish</a></li>
+					</ul>
+				</div>
+			</div>
+	</section>
+</div>

@@ -1,0 +1,40 @@
+<header class="top-header clearfix">
+    <!-- Logo -->
+    <div class="logo">
+            <span><img src="resources/images/tesoro-connect-logo.png" ></span>
+    </div>
+
+    <!-- needs to be put after logo to make it working-->
+    <div class="top-nav">
+         <div class="col-md-12 pull-right">
+	        <ul class="nav-right pull-right list-unstyled txt-white">
+	            <li class="dropdown text-normal nav-profile lineHeight50" id="userLink" >Welcome Jhon &nbsp;&nbsp;&nbsp;</li>
+				<li class="dropdown text-normal nav-profile lineHeight50" id="logoutLink" ><a href="../home/login"  data-ng-click="hideLogoutLink()" style="color: white;border-left: medium none;margin-top: -14px;">Logout &nbsp;&nbsp;&nbsp;</a></li>
+				<li class="hidden-xs"><span><img src="resources/images/tesoro-logo.png" ></span> </li>
+	        </ul>
+		</div>
+    </div>
+</header>
+
+<div class="col-md-12 bg_white" id="tesoroMenu" style="display: block;">
+<div class="col-md-3 lineHeight50 pull-right text-right minwidth30p">Customer : 198080 <span class="hidden-mobile">- Vinters Distributors, INC.</span></div>
+	<nav class="navbar col-md-3 pull-left">
+			<div class="navbar-header">
+			  <button type="button" id="menuButtonId" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			  </button>
+			</div>
+			<div id="navbar" class="collapse navbar-collapse" >
+			  <ul class="nav navbar-nav">
+				<!-- <li><a href="#/pricing/retail-pricing/RetailPricingView" data-ng-click="hideNavBar()">Retail Pricing</a></li>
+				<li><a href="#/pricing/competitor-pricing/CompetitorPricingView" data-ng-click="hideNavBar()">Competitor Pricing</a></li> -->
+				<li><a ng-href="#/retail">Retail Pricing</a></li>
+				<li><a ng-href="#/competitor">Competitor Pricing</a></li>
+			  </ul>
+			</div><!--/.nav-collapse -->
+		</nav>
+	<div class="clearfix"></div>	
+</div>

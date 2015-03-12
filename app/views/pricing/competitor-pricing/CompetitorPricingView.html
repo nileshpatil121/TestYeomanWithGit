@@ -1,0 +1,41 @@
+<!doctype html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>TESORO CONNECT</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <link rel="stylesheet" href="../recources/bower_components/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../recources/bower_components/weather-icons/css/weather-icons.min.css"> 
+        <link rel="stylesheet" href="../recources/css/main.css"/>
+    </head>
+    <body data-ng-app="app" id="app" class="app" data-custom-page="" data-off-canvas-nav="" data-ng-controller="AppCtrl" data-ng-class=" {'layout-boxed': admin.layout === 'boxed' } ">
+        <section data-ng-include=" '../app/common/header.html' " id="header" class="header-container" data-ng-class=" {'header-fixed': admin.fixedHeader} " data-ng-controller="HeaderCtrl"></section>
+		
+        <div class="main-container">
+            <section id="content" class="content-container {{admin.pageTransition.class}}">
+            
+				<!-- Main Code -->
+				<div class="page page-table" data-ng-controller="tableCtrl">
+					<section class="panel panel-default table-dynamic">
+						<div class="panel-heading" name="dataTableStart" id="dataTableStart">
+							<strong><span class="glyphicon glyphicon-th"></span> Competitor Pricing</strong>
+						</div>
+						<section data-ng-include=" '../app/pricing/competitor-pricing/Competitor_EnterPrice_Card.html' "></section>
+						<section data-ng-include=" '../app/pricing/competitor-pricing/Competitor_Preview_Card.html' "></section>
+						<section data-ng-include=" '../app/pricing/competitor-pricing/Competitor_Confirmation_Card.html' "></section>
+					</section>
+				</div>
+				<!-- Main Code -->
+				
+ 			</section>
+        </div>
+		<section data-ng-include=" '../app/common/footer.html' "></section>
+		
+        <script src="../app/vendor.js"></script>
+        <script src="../app/ui.js"></script>
+        <script src="../app/pricing/competitor-pricing/CompetitorPricingController.js"></script>
+		<script src="../recources/js/bootstrap.min.js"></script>
+    </body>
+</html>

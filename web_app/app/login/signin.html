@@ -1,0 +1,45 @@
+<div class="main-container">
+        <section id="content" class="content-container {{admin.pageTransition.class}}">
+
+            <!-- Main Code -->
+            <div data-ng-app="myapp" class="page-signin" data-ng-controller="demoCtrl">
+                <div class="">
+                    <section class="logo text-center">
+                        <a href="#/">{{brand}}</a>
+                    </section>
+                </div>
+
+                <div class="signin-body">
+                    <div class="container">
+                        <div class="form-container">
+
+                            <form class="form-horizontal">
+                                <div class="alert alert-danger" role="alert" data-ng-show="showError">
+                                    <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span> <span class="sr-only">Error:</span>{{errorMessage}}
+                                </div>
+                                <fieldset>
+                                    <div class="form-group">
+                                        <div class="btn-icon-lined btn-icon-round btn-icon-sm btn-default-light">
+                                            <span class="glyphicon glyphicon-envelope"></span>
+                                        </div>
+                                        <input type="text" class="form-control input-lg input-round text-center" placeholder="Username" data-ng-model="username">
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="btn-icon-lined btn-icon-round btn-icon-sm btn-default-light">
+                                            <span class="glyphicon glyphicon-lock"></span>
+                                        </div>
+                                        <input type="password" class="form-control input-lg input-round text-center" placeholder="Password" data-ng-model="password">
+                                    </div>
+                                    <div class="form-group">
+                                        <a class="btn btn-primary btn-lg btn-round btn-block text-center" data-ng-click="submitForm()">Log in</a>
+                                    </div>
+                                </fieldset>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Main Code -->
+        </section>
+    </div>

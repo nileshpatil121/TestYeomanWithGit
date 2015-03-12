@@ -1,0 +1,67 @@
+{  
+   "data":[  
+      {          
+         "shipTo":"322710",
+         "site":"62518",
+         "address":"19825 SR 410 E",
+         "brand":"TESORO",
+		 "city":"SPOKANE"
+      },
+      {          
+         "shipTo":"322711",
+         "site":"62519",
+         "address":"19825 SR 410 E",
+         "brand":"FLYJ",
+		 "city":"SPOKANE"
+      },
+	  {          
+         "shipTo":"322712",
+         "site":"62520",
+         "address":"19825 SR 410 E",
+         "brand":"MAVER",
+		 "city":"SPOKANE"
+      },
+	  {          
+         "shipTo":"322713",
+         "site":"62521",
+         "address":"19825 SR 410 E",
+         "brand":"EXXON",
+		 "city":"SPOKANE"
+      },
+	  {          
+         "shipTo":"322714",
+         "site":"62522",
+         "address":"19825 SR 410 E",
+         "brand":"FLYJ",
+		 "city":"SPOKANE"
+      },
+	  {          
+         "shipTo":"322715",
+         "site":"62523",
+         "address":"19825 SR 410 E",
+         "brand":"TESORO",
+		 "city":"SPOKANE"
+      },
+	  {          
+         "shipTo":"322716",
+         "site":"62524",
+         "address":"19825 SR 410 E",
+         "brand":"EXXON",
+		 "city":"SPOKANE"
+      },
+	  {          
+         "shipTo":"322717",
+         "site":"62525",
+         "address":"19825 SR 410 E",
+         "brand":"FLYJ",
+		 "city":"SPOKANE"
+      },
+	  {          
+         "shipTo":"322718",
+         "site":"62526",
+         "address":"19825 SR 410 E",
+         "brand":"MAVER",
+		 "city":"SPOKANE"
+      }
+   ]
+}

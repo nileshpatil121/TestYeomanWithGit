@@ -1,0 +1,85 @@
+<div class="table-filters" >
+	<div class="row">
+		<div class="col-sm-5 col-xs-5">
+			<form>
+				<div class="form-group col-sm-4">
+					<label for="exampleInputEmail1">SHIP-TO</label> <span
+						class="ui-select"> <select>
+							<option value="Mustard">ALL</option>
+							<option data-ng-repeat="store in currentPageStores"
+								value="{{store.shipTo}}">{{store.shipTo}}</option>
+					</select>
+					</span>
+				</div>
+				<div class="form-group col-sm-4">
+					<label for="exampleInputEmail1">SITE-#</label> <span
+						class="ui-select"> <select>
+						<option value="Mustard">ALL</option>
+						<option ng-repeat="store in currentPageStores"
+							value="{{store.site}}">{{store.site}}</option>
+					</select> </span>
+				</div>
+				<div class="form-group col-sm-4 hidden-mobile">
+					<label for="exampleInputEmail1">EFFECTIVE DATE</label> <span
+						class="ui-select"> <select>
+							<option value="Mustard">Recent</option>
+							<option value="Ketchup">Effective Date Range</option>
+					</select>
+					</span>
+				</div>
+
+			</form>
+		</div>
+		<div class="col-sm-7 col-xs-7">
+			<div class="form-group col-sm-4 hidden-mobile">
+				<label for="exampleInputEmail1 ">From Date</label>
+				<div class="input-group ui-datepicker"  >
+					<input type="text" 
+						id="fromDate"
+						class="form-control"
+						datepicker-popup="{{format}}" 
+						ng-model="dt1" 
+						is-open="opened1"
+						min="minDate" 
+						max="'2015-06-22'" 
+						datepicker-options="dateOptions"
+						date-disabled="disabled(date, mode)" 
+						ng-required="true"
+						close-text="Close"> <span class="input-group-addon"
+						ng-click="open1($event,1)"><i class="fa fa-calendar"></i></span>
+				</div>
+			</div>
+			<div class="form-group col-sm-4 hidden-mobile">
+				<label for="exampleInputEmail1">TO Date</label>
+				<div class="input-group ui-datepicker">
+					<input  type="text" 
+					 	id="toDate"
+						class="form-control"
+						datepicker-popup="{{format}}" 
+						ng-model="dt2" 
+						is-open="opened2"
+						min="minDate" 
+						max="'2015-06-28'" 
+						datepicker-options="dateOptions"
+						date-disabled="disabled(date, mode)" 
+						ng-required="true"
+						close-text="Close"> <span class="input-group-addon"
+						ng-click="open2($event,2)"><i class="fa fa-calendar"></i></span>
+				</div>
+			</div>
+			<div class="col-sm-4">
+
+				<dd class="col-sm-12">
+					<label class="ui-checkbox"><input name="checkbox1"
+						type="checkbox" value="option1"><span>Show Active
+							Prices</span></label>
+				</dd>
+				<a href="#/retail-pricing#dataTableStart"
+					class="btn btn-default col-sm-12"> Search </a>
+
+			</div>
+
+
+		</div>
+	</div>
+</div>
